@@ -7,13 +7,12 @@
     "dev": "mcfly serve",
     "build": "mcfly build",
     "preview": "node .output/server/index.mjs",
-    "build:preview": "pnpm run build && pnpm run preview"
+    "build:preview": "pnpm run build && pnpm run preview",
+    "deploy": "netlify deploy --site=$NETLIFY_SITE_ID --dir=dist --prod"
   },
   "dependencies": {
-    "@mcflyjs/cli": "^0.0.27",
-    "@mcflyjs/config": "^0.1.5",
-    "@mcflyjs/core": "^0.5.4",
-    "nitropack": "~2.10.4"
+    "@mcflyjs/config": "^0.2.7",
+    "@mcflyjs/core": "^0.8.5"
   },
   "version": "0.0.1",
   "main": "index.js",
