@@ -1,3 +1,6 @@
+> [!NOTE]
+> The project is now in [SourceHut](https://git.sr.ht/~ayoayco/wcb), and all other places are just [git mirrors](https://www.educative.io/answers/beginners-guide-git-mirrors). Please submit issues or requests via our [Todo Page](https://todo.sr.ht/~ayoayco/wcb).
+
 # Web Component Base
 
 [![Package information: NPM version](https://img.shields.io/npm/v/web-component-base)](https://www.npmjs.com/package/web-component-base)
