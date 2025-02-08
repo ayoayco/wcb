@@ -1,5 +1,5 @@
 > [!NOTE]
-> The project is now in [SourceHut](https://git.sr.ht/~ayoayco/wcb), and all other places are just [git mirrors](https://www.educative.io/answers/beginners-guide-git-mirrors). Please submit issues or requests via our [Todo Page](https://todo.sr.ht/~ayoayco/wcb).
+> The project is now in [SourceHut](https://git.sr.ht/~ayoayco/wcb). Please submit issues or requests via our [Todo Page](https://todo.sr.ht/~ayoayco/wcb) or [via email](mailto:~ayoayco/wcb@todo.sr.ht) (~ayoayco/wcb@todo.sr.ht).
 
 # Web Component Base
 
