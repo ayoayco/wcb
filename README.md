@@ -13,8 +13,9 @@ When you extend the `WebComponent` class for your component, you only have to de
 
 The result is a reactive UI on property changes.
 
-Links:
-
+## Links
+- [Repository](https://git.sr.ht/~ayoayco/wcb)
+- [Issues](https://todo.sr.ht/~ayoayco/wcb)
 - [Read a blog explaining the reactivity](https://ayos.blog/reactive-custom-elements-with-html-dataset/)
 - [View demo on CodePen](https://codepen.io/ayoayco-the-styleful/pen/ZEwoNOz?editors=1010)
 
