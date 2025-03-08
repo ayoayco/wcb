@@ -17,6 +17,7 @@ When you extend the `WebComponent` class for your component, you only have to de
 The result is a reactive UI on property changes.
 
 ## Links
+
 - [Repository](https://git.sr.ht/~ayoayco/wcb)
 - [Issues](https://todo.sr.ht/~ayoayco/wcb)
 - [Read a blog explaining the reactivity](https://ayos.blog/reactive-custom-elements-with-html-dataset/)
@@ -450,3 +451,8 @@ All the functions and the base class in the library are minimalist by design and
 As of v2.0.0, the main export (with `WebComponent` + `html` + `attachEffect`) is 1.7 kB (min + gzip) according to [bundlephobia.com](https://bundlephobia.com/package/web-component-base@2.0.0), and the `WebComponent` base class is just 1.1 kB (min + brotli) according to [size-limit](http://github.com/ai/size-limit).
 
 There is an increase in size compared to that of before this release, primarily because of advanced features (e.g., effects, html tagged templates, and props blueprints) in building complex applications.
+
+## Inspirations and thanks
+
+1. [htm](https://github.com/developit/htm)
+1. [lit](https://github.com/lit/lit)
