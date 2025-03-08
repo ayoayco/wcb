@@ -52,9 +52,9 @@ The result is a reactive UI on property changes.
 
 ## Project Status
 
-It is ready for many cases we see people use custom elements for. If you have a cool project built on **WebComponent.io** we'd love to know! :)
+It is ready for many simple cases we see people use custom elements for. If you have a cool project built on **WebComponent.io** we'd love to know! :)
 
-For building some advanced interactions, we have a few issues that are still open: [#24 smart diffing](https://github.com/ayoayco/web-component-base/issues/24) & [#4 attachEffect improvements](https://github.com/ayoayco/web-component-base/issues/4)
+For building advanced interactions, we have an in-progress work on smart diffing to prevent component children being wiped on interaction.
 
 In the mean time, if you have some complex needs, we recommend using the `WebComponent` base class with a more mature rendering approach like `lit-html`... and here's a demo for that: [View on CodePen ↗](https://codepen.io/ayoayco-the-styleful/pen/ZEwNJBR?editors=1010).
 
@@ -91,15 +91,13 @@ You can import everything separately, or in a single file each for the main expo
 ```js
 // all in a single file
 
-import { WebComponent, html, attachEffect } from 'web-component-base'
+import { WebComponent, html } from 'web-component-base'
 
 // in separate files
 
 import { WebComponent } from 'web-component-base/WebComponent.js'
 
 import { html } from 'web-component-base/html.js'
-
-import { attachEffect } from 'web-component-base/attach-effect.js'
 ```
 
 ### Utilities
@@ -221,7 +219,6 @@ Some feature-specific demos:
 1. [Using dynamic style objects](https://codepen.io/ayoayco-the-styleful/pen/bGzXjwQ?editors=1010)
 1. [Using the Shadow DOM](https://codepen.io/ayoayco-the-styleful/pen/VwRYVPv?editors=1010)
 1. [Using tagged templates in your vanilla custom element](https://codepen.io/ayoayco-the-styleful/pen/bGzJQJg?editors=1010)
-1. [Using attachEffect (experimental)](https://codepen.io/ayoayco-the-styleful/pen/ExrdWPv?editors=1011)
 
 ## `template` vs `render()`
 
@@ -448,9 +445,9 @@ class ClickableText extends WebComponent {
 
 All the functions and the base class in the library are minimalist by design and only contains what is needed for their purpose.
 
-As of v2.0.0, the main export (with `WebComponent` + `html` + `attachEffect`) is 1.7 kB (min + gzip) according to [bundlephobia.com](https://bundlephobia.com/package/web-component-base@2.0.0), and the `WebComponent` base class is just 1.1 kB (min + brotli) according to [size-limit](http://github.com/ai/size-limit).
+As of v3, the main export (with `WebComponent` + `html`) is 1.7 kB (min + gzip) according to [bundlephobia.com](https://bundlephobia.com/package/web-component-base@2.0.0), and the `WebComponent` base class is just 1.08 kB (min + brotli) according to [size-limit](http://github.com/ai/size-limit).
 
-There is an increase in size compared to that of before this release, primarily because of advanced features (e.g., effects, html tagged templates, and props blueprints) in building complex applications.
+There is an increase in size compared to that of before this release, primarily because of advanced features (e.g., html tagged templates, and props blueprints) in building complex applications.
 
 ## Inspirations and thanks
 

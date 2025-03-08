@@ -20,7 +20,6 @@ export class WebComponent extends HTMLElement {
   #prevDOM
   #props
   #typeMap = {}
-  #effectsMap = {}
 
   /**
    * Array of strings that tells the browsers which attributes will cause a render
@@ -130,7 +129,6 @@ export class WebComponent extends HTMLElement {
   }
 
   #handler(setter, meta) {
-    const effectsMap = meta.#effectsMap
     const typeMap = meta.#typeMap
 
     return {
@@ -141,12 +139,7 @@ export class WebComponent extends HTMLElement {
           typeMap[prop] = typeof value
         }
 
-        if (value.attach === 'effect') {
-          if (!effectsMap[prop]) {
-            effectsMap[prop] = []
-          }
-          effectsMap[prop].push(value.callback)
-        } else if (typeMap[prop] !== typeof value) {
+        if (typeMap[prop] !== typeof value) {
           throw TypeError(
             `Cannot assign ${typeof value} to ${
               typeMap[prop]
@@ -154,7 +147,6 @@ export class WebComponent extends HTMLElement {
           )
         } else if (oldValue !== value) {
           obj[prop] = value
-          effectsMap[prop]?.forEach((f) => f(value))
           const kebab = getKebabCase(prop)
           setter(kebab, serialize(value))
         }

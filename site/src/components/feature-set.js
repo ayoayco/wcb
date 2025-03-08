@@ -25,13 +25,6 @@ class FeatureSet extends WebComponent {
         'Use the built-in JSX-like syntax or bring your own custom templating',
       url: 'https://codepen.io/ayoayco-the-styleful/pen/ZEwNJBR?editors=1010',
     },
-    {
-      icon: '️🛜',
-      title: 'Powerful.',
-      description:
-        "Attach 'side effects' that gets triggered on property value changes",
-      url: '',
-    },
   ]
 
   /**

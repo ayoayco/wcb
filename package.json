@@ -101,5 +101,8 @@
       "path": "./dist/utils/get-kebab-case.js",
       "limit": "0.5 KB"
     }
-  ]
+  ],
+  "dependencies": {
+    "release-it": "^18.1.2"
+  }
 }
