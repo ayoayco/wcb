@@ -27,6 +27,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "start": "npx simple-server .",
+    "dev": "npm start",
     "test": "vitest",
     "demo": "npx simple-server .",
     "site": "pnpm --filter site start",
