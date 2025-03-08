@@ -56,17 +56,18 @@
     "url": "https://github.com/ayoayco/web-component-base/issues"
   },
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^11.1.6",
-    "esbuild": "^0.24.2",
-    "eslint": "^9.17.0",
-    "eslint-plugin-jsdoc": "^50.6.1",
-    "globals": "^15.14.0",
+    "@size-limit/preset-small-lib": "^11.2.0",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-jsdoc": "^50.6.3",
+    "globals": "^16.0.0",
     "husky": "^9.1.7",
-    "netlify-cli": "^18.0.0",
-    "prettier": "^3.4.2",
-    "size-limit": "^11.1.6",
-    "typescript": "^5.7.3",
-    "vitest": "^2.1.8"
+    "netlify-cli": "^19.0.2",
+    "prettier": "^3.5.3",
+    "release-it": "^18.1.2",
+    "size-limit": "^11.2.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
   },
   "size-limit": [
     {
@@ -101,8 +102,5 @@
       "path": "./dist/utils/get-kebab-case.js",
       "limit": "0.5 KB"
     }
-  ],
-  "dependencies": {
-    "release-it": "^18.1.2"
-  }
+  ]
 }
