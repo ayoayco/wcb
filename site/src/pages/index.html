@@ -123,6 +123,9 @@ export class Counter extends WebComponent {
   static props = {
     count: 0
   }
+  onInit() {
+    // do something...
+  }
   get template() {
     return html`
       &lt;button onClick=${() => ++this.props.count}&gt;
