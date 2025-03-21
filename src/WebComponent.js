@@ -154,11 +154,6 @@ export class WebComponent extends HTMLElement {
         return true
       },
       get(obj, prop) {
-        // TODO: handle non-objects
-        if (obj[prop] !== null && obj[prop] !== undefined) {
-          Object.getPrototypeOf(obj[prop]).proxy = meta.#props
-          Object.getPrototypeOf(obj[prop]).prop = prop
-        }
         return obj[prop]
       },
     }
