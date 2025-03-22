@@ -13,3 +13,6 @@ dist/
 .output
 .env
 .eslintcache
+
+# vitest
+coverage
