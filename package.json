@@ -78,15 +78,11 @@
   "size-limit": [
     {
       "path": "./dist/WebComponent.js",
-      "limit": "1.5 KB"
+      "limit": "1.1 KB"
     },
     {
       "path": "./dist/html.js",
       "limit": "0.6 KB"
-    },
-    {
-      "path": "./dist/attach-effect.js",
-      "limit": "0.1 KB"
     },
     {
       "path": "./dist/utils/create-element.js",
