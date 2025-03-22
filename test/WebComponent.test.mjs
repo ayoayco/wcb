@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest'
-import { WebComponent } from './WebComponent.js'
+import { WebComponent } from '../src/WebComponent.js'
 
 let componentUnderTest
 

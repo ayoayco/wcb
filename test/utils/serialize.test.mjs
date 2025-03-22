@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { serialize } from '../src/utils/serialize.mjs'
+import { serialize } from '../../src/utils/serialize.mjs'
 
 describe('serialize', () => {
   test('should stringify number', () => {
