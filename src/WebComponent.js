@@ -22,12 +22,6 @@ export class WebComponent extends HTMLElement {
   #typeMap = {}
 
   /**
-   * Array of strings that tells the browsers which attributes will cause a render
-   * @type {Array<string>}
-   */
-  static properties = []
-
-  /**
    * Blueprint for the Proxy props
    * @typedef {{[name: string]: any}} PropStringMap
    * @type {PropStringMap}
@@ -96,7 +90,7 @@ export class WebComponent extends HTMLElement {
       ? Object.keys(this.props).map((camelCase) => getKebabCase(camelCase))
       : []
 
-    return [...new Set([...this.properties, ...propKeys])]
+    return propKeys
   }
 
   connectedCallback() {
