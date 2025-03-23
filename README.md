@@ -445,9 +445,7 @@ class ClickableText extends WebComponent {
 
 All the functions and the base class in the library are minimalist by design and only contains what is needed for their purpose.
 
-As of v3, the main export (with `WebComponent` + `html`) is 1.7 kB (min + gzip) according to [bundlephobia.com](https://bundlephobia.com/package/web-component-base@2.0.0), and the `WebComponent` base class is just 1.08 kB (min + brotli) according to [size-limit](http://github.com/ai/size-limit).
-
-There is an increase in size compared to that of before this release, primarily because of advanced features (e.g., html tagged templates, and props blueprints) in building complex applications.
+The main export (with `WebComponent` + `html`) is 1.7 kB (min + gzip) according to [bundlephobia.com](https://bundlephobia.com/package/web-component-base@latest), and the `WebComponent` base class is just 1.08 kB (min + brotli) according to [size-limit](http://github.com/ai/size-limit).
 
 ## Inspirations and thanks
 
