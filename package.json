@@ -31,7 +31,6 @@
     "test": "vitest --run",
     "test:watch": "vitest",
     "demo": "npx simple-server .",
-    "site": "pnpm -F site start",
     "docs": "pnpm -F docs start",
     "build": "pnpm run clean && tsc && pnpm run copy:source",
     "size-limit": "pnpm run build && size-limit",
