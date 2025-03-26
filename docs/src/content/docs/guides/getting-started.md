@@ -1,0 +1,42 @@
+---
+title: Getting Started
+slug: getting-started
+---
+
+**Web Component Base (WCB)** is a zero-dependency, tiny JS base class for creating reactive [custom elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components/Using_custom_elements) easily.
+
+When you extend the WebComponent class for your component, you only have to define the template and properties. Any change in any property value will automatically cause just the component UI to render.
+
+The result is a reactive UI on property changes.
+
+## Project Status
+
+It is ready for many simple cases we see people use custom elements for. If you have a cool project built on **WebComponent.io** we'd love to know! :)
+
+For building advanced interactions, we have an in-progress work on smart diffing to prevent component children being wiped on interaction.
+
+In the mean time, if you have some complex needs, we recommend using the `WebComponent` base class with a more mature rendering approach like `lit-html`... and here's a demo for that: [View on CodePen ↗](https://codepen.io/ayoayco-the-styleful/pen/ZEwNJBR?editors=1010).
+
+...or you can even [use just parts](#just-the-templating) of it for your own base class.
+
+## Installation
+
+The library is distributed as complete ECMAScript Modules (ESM) and published on [NPM](https://ayco.io/n/web-component-base). Please file an issue in our [issue tracker](https://ayco.io/gh/web-component-base/issues) for problems or requests regarding our distribution.
+
+### Import via CDN
+
+It is possible to import directly using a CDN like [esm.sh](https://esm.sh/web-component-base) or [unpkg](https://unpkg.com/web-component-base) in your vanilla JS component or HTML files. In all examples in this document, we use `unpkg` but you can find on CodePen examples that `esm.sh` also works well.
+
+Additionally, we use `@latest` in the rest of our [usage examples](#usage) here for simplicity, but take note that this incurs additional resolution steps for CDNs to find the actual latest published version. You may replace the `@latest` in the URL with specific versions as shown in our CodePen examples, and this will typically be better for performance.
+
+```js
+import { WebComponent } from 'https://unpkg.com/web-component-base@latest/index.js'
+```
+
+### Installation via npm
+
+Usable for projects with bundlers or using import maps pointing to the specific files downloaded in `node_modules/web-component-base`.
+
+```bash
+npm i web-component-base
+```

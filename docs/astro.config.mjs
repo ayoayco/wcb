@@ -4,6 +4,9 @@ import starlight from '@astrojs/starlight'
 
 // https://astro.build/config
 export default defineConfig({
+  redirects: {
+    '/guides/': '/guides/why',
+  },
   integrations: [
     starlight({
       title: 'WCB',
@@ -16,14 +19,24 @@ export default defineConfig({
           label: 'Guides',
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: 'Getting Started', slug: 'guides' },
-            { label: 'Why?', slug: 'why' },
+            'why',
+            'getting-started',
+            'exports',
+            'usage',
+            'examples',
+            'template-vs-render',
+            'prop-access',
+            'styling',
+            'shadow-dom',
+            'just-parts',
+            'life-cycle-hooks',
+            'library-size',
           ],
         },
-        {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' },
-        },
+        // {
+        //   label: 'Reference',
+        //   autogenerate: { directory: 'reference' },
+        // },
       ],
     }),
   ],
