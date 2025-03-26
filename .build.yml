@@ -1,0 +1,38 @@
+image: alpine/edge
+packages:
+  - nodejs
+  - npm
+  - pnpm
+secrets:
+  - 291f0e35-9b8d-43ff-844c-77c5f29c1876
+  - bbfcb6dc-7c4a-42ee-a11a-022f0339a133
+environment:
+  NETLIFY_SITE_ID: 390b392a-a898-491b-8500-79aa30f724d6
+  GH_USER: ayoayco
+  REPO: wcb
+tasks:
+  - push-mirror: |
+      cd ~/"${REPO}"
+      git config --global credential.helper store
+      git push --mirror "https://github.com/${GH_USER}/${REPO}"
+  - install-deps: |
+      cd ~/"${REPO}"
+      pnpm i --ignore-scripts
+  - test: |
+      cd ~/"${REPO}"
+      npx vitest run
+  - build: |
+      cd ~/"${REPO}"
+      pnpm -F ./packages/core build
+      pnpm -F ./packages/config build
+      pnpm -F docs i --ignore-scripts
+      pnpm -F docs build
+  - deploy: |
+      cd wcb
+      {
+        set +x
+        . ~/.buildsecrets
+        set -x
+      }
+      export NETLIFY_AUTH_TOKEN
+      pnpm -F docs run deploy
