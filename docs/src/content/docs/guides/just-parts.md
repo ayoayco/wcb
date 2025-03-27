@@ -3,7 +3,7 @@ title: Using Just Some Parts
 slug: 'just-parts'
 ---
 
-You don't have to extend the whole base class just to use some features. All internals are exposed and usable separately so you can practically build the behavior on your own classes.
+You don't have to extend the whole base class to use some features. All internals are exposed and usable separately so you can practically build the behavior on your own classes.
 
 Here's an example of using the `html` tag template on a class that extends from vanilla `HTMLElement`... also [View on CodePen ↗](https://codepen.io/ayoayco-the-styleful/pen/bGzJQJg?editors=1010).
 
