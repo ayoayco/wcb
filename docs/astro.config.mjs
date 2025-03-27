@@ -19,8 +19,8 @@ export default defineConfig({
           label: 'Guides',
           items: [
             // Each item here is one entry in the navigation menu.
-            'why',
             'getting-started',
+            'why',
             'exports',
             'usage',
             'examples',
