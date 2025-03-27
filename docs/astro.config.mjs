@@ -9,7 +9,7 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      title: 'WCB',
+      title: 'WCB (alpha)',
       social: {
         npm: 'https://www.npmjs.com/package/web-component-base',
         sourcehut: 'https://sr.ht/~ayoayco/wcb/',

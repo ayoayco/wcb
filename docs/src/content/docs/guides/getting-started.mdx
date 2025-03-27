@@ -3,9 +3,10 @@ title: Getting Started
 slug: getting-started
 ---
 
-import { Aside } from '@astrojs/starlight/components';
+import { Aside, Badge } from '@astrojs/starlight/components';
 
-**Web Component Base (WCB)** is a zero-dependency, tiny JS base class for creating reactive [custom elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components/Using_custom_elements) easily.
+**Web Component Base (WCB)** 
+<Badge text="alpha" variant="danger" /> is a zero-dependency, tiny JS base class for creating reactive [custom elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components/Using_custom_elements) easily.
 
 When you extend the WebComponent class for your component, you only have to define the template and properties. Any change in any property value will automatically cause just the component UI to render.
 
@@ -13,7 +14,7 @@ The result is a reactive UI on property changes.
 
 ## Project Status
 
-Treat it as an **alpha** product. Most examples are only useful for simple atomic use-cases at the moment. If you have a cool project using **WebComponent.io** we'd love to know! :)
+Treat it as a **stable alpha** product. Though the public APIs are stable, most examples are only useful for simple atomic use-cases due to remaining work needed on the internals.
 
 <Aside type="caution" title="Important">
 For building advanced interactions, there is an in-progress work on smart diffing to prevent component children being wiped on interaction.
