@@ -14,6 +14,7 @@ export default defineConfig({
         npm: 'https://www.npmjs.com/package/web-component-base',
         sourcehut: 'https://sr.ht/~ayoayco/wcb/',
         github: 'https://github.com/ayoayco/wcb/',
+        discord: 'https://discord.gg/kkvW7GYNAp',
       },
       sidebar: [
         {
@@ -42,6 +43,23 @@ export default defineConfig({
       components: {
         Footer: './src/components/Attribution.astro',
       },
+      head: [
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'mask-icon',
+            href: 'mask-icon.svg',
+            color: '#000000',
+          },
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'apple-touch-icon',
+            href: 'apple-touch-icon.png',
+          },
+        },
+      ],
     }),
   ],
 })
