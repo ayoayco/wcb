@@ -39,18 +39,6 @@ There are many ways to get in touch:
 
 ## Inspirations and thanks
 
-Funny story how the project started: I was on a vacation with the family and did not bring my laptop. While in vacation, I took lots of videos and pictures and posted them on Instagram stories because that's where my friends & the rest of family are. Because it was a time that I was working on contributions to [Elk](https://main.elk.zone), I thought: Hey wouldn't it be nice to post these _Instagram-story-style_ (I'm a big fan of that UI) everywhere I can: Elk, my personal site, pixelfed maybe? But I have to build it framework-agnostic! How?
-
-That's when I got into **web components** -- I had the idea in my head, without a laptop to work on it.
-
-When I got back home, the first thing I did was study how it works starting from the vanilla way of extending from HTMLElement. But immediately I saw several boilerplate I don't want to write every time I need a custom element... and I naturally wrote my own base class.
-
-After several iterations, the APIs got really interesting, and I posted about it on my social. Of course someone commented: "TAKE A LOOK AT THIS" (or something like that) and linked me to Lit's ReactiveElement. And then, I realized, woops **HOW CAN I FORGET LIT EXISTS!?**.
-
-Anyway, here we are, I still don't have the _Instagram-story-style_ component that started it all... because I felt the need to have a simple custom elements base class first... cursed hobby projects :)
-
-## I would like to thank the following
-
 1. [htm](https://github.com/developit/htm) - I use it for the `html` function for tagged templates, and take a lot of inspiration in building the rendering implementation. It is highly likely that I will go for what Preact is doing... but we'll see.
-1. [fast](https://github.com/microsoft/fast) - Somewhere in the middle, I found that Microsoft has their own base class (super cool!) and I thought: okay, I don't feel bad about forgetting Lit exists now
-1. [lit](https://github.com/lit/lit) - you guys rock. `lit-html` continues to amaze me and I worked to make `wcb` generic so I (and others) can continue to use it
+1. [fast](https://github.com/microsoft/fast) - When I found that Microsoft has their own base class (super cool!) and I thought: okay, I don't feel bad about forgetting Lit exists now
+1. [lit](https://github.com/lit/lit) - `lit-html` continues to amaze me and I worked to make `wcb` generic so I (and others) can continue to use it
