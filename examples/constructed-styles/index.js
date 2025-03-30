@@ -2,11 +2,6 @@
 import { WebComponent, html } from '../../src/index.js'
 
 class StyledElements extends WebComponent {
-  static props = {
-    condition: false,
-    type: 'info',
-  }
-
   static shadowRootInit = {
     mode: 'open',
   }

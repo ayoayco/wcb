@@ -10,7 +10,19 @@ Try it now [on CodePen ↗](https://codepen.io/ayoayco-the-styleful/pen/VwRYVPv?
 Example:
 
 ```js
+class ShadowElement extends WebComponent {
   static shadowRootInit = {
-    mode: "closed",
-  };
+    mode: 'open', // can be 'open' or 'closed'
+  }
+
+  get template() {
+    return html`
+      <div>
+        <p>Wow!?</p>
+      </div>
+    `
+  }
+}
+
+customElements.define('shadow-element', ShadowElement)
 ```
