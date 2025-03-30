@@ -28,6 +28,8 @@ export class WebComponent extends HTMLElement {
    */
   static props
 
+  static styles
+
   /**
    * Read-only string property that represents how the component will be rendered
    * @returns {string | any}
@@ -182,7 +184,15 @@ export class WebComponent extends HTMLElement {
 
       // TODO: smart diffing
       if (JSON.stringify(this.#prevDOM) !== JSON.stringify(tree)) {
+        this.#applyStyles()
+
+        /**
+         * create element
+         * - resolve prop values
+         * - attach event listeners
+         */
         const el = createElement(tree)
+
         if (el) {
           if (Array.isArray(el)) this.#host.replaceChildren(...el)
           else this.#host.replaceChildren(el)
@@ -190,5 +200,12 @@ export class WebComponent extends HTMLElement {
         this.#prevDOM = tree
       }
     }
+  }
+
+  #applyStyles() {
+    const styleObj = new CSSStyleSheet()
+    styleObj.replaceSync(this.constructor.styles)
+    console.log(this.constructor.styles, this.constructor.props)
+    this.#host.adoptedStyleSheets = [...this.#host.adoptedStyleSheets, styleObj]
   }
 }
