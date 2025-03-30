@@ -1,0 +1,35 @@
+---
+title: Web Component Base
+description: Web components in Easy Mode
+template: splash
+hero:
+  tagline: A simple reactivity system for web components
+  # image:
+  #   file: ../../assets/houston.webp
+  actions:
+    - text: Get Started
+      link: /getting-started
+      icon: right-arrow
+    - text: Play on CodePen
+      link: https://codepen.io/ayoayco-the-styleful/pen/PoVegBK?editors=1010
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+	<Card title="Reactive." icon="rocket">
+		A robust API for synchronizing your component's UI and properties
+	</Card>
+	<Card title="Tiny." icon="add-document">
+		~1 kB base class (minified, compressed) with versatile utilities
+	</Card>
+	<Card title="Easy." icon="heart">
+		Sensible life-cycle hooks that you understand and remember
+	</Card>
+	<Card title="Familiar." icon="open-book">
+		Use the built-in JSX-like syntax or bring your own custom templating
+	</Card>
+</CardGrid>
+

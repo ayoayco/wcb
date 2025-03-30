@@ -8,8 +8,8 @@ secrets:
   - bbfcb6dc-7c4a-42ee-a11a-022f0339a133
 environment:
   NETLIFY_SITE_ID: bfd69adf-f754-433c-9690-63426f0d2fa0
-  REPO: wcb
   GH_USER: ayoayco
+  REPO: wcb
 tasks:
   - push-mirror: |
       cd ~/"${REPO}"
@@ -17,16 +17,22 @@ tasks:
       git push --mirror "https://github.com/${GH_USER}/${REPO}"
   - install-deps: |
       cd ~/"${REPO}"
-      pnpm i
+      pnpm i --ignore-scripts
+  - test: |
+      cd ~/"${REPO}"
+      npx vitest run
   - build: |
       cd ~/"${REPO}"
-      pnpm -F site run build
+      pnpm -F ./packages/core build
+      pnpm -F ./packages/config build
+      pnpm -F docs i --ignore-scripts
+      pnpm -F docs build
   - deploy: |
-      cd ~/"${REPO}"
+      cd wcb
       {
         set +x
         . ~/.buildsecrets
         set -x
       }
       export NETLIFY_AUTH_TOKEN
-      pnpm -F site run deploy
+      pnpm -F docs run deploy
