@@ -23,9 +23,6 @@ tasks:
       npx vitest run
   - build: |
       cd ~/"${REPO}"
-      pnpm -F ./packages/core build
-      pnpm -F ./packages/config build
-      pnpm -F docs i --ignore-scripts
       pnpm -F docs build
   - deploy: |
       cd wcb
