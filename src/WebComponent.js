@@ -28,6 +28,7 @@ export class WebComponent extends HTMLElement {
    */
   static props
 
+  // TODO: support array of styles
   static styles
 
   /**
@@ -203,9 +204,20 @@ export class WebComponent extends HTMLElement {
   }
 
   #applyStyles() {
-    const styleObj = new CSSStyleSheet()
-    styleObj.replaceSync(this.constructor.styles)
-    console.log(this.constructor.styles, this.constructor.props)
-    this.#host.adoptedStyleSheets = [...this.#host.adoptedStyleSheets, styleObj]
+    if (this.constructor.styles !== undefined)
+      try {
+        const styleObj = new CSSStyleSheet()
+        styleObj.replaceSync(this.constructor.styles)
+        console.log(this.constructor.styles, this.constructor.props)
+        this.#host.adoptedStyleSheets = [
+          ...this.#host.adoptedStyleSheets,
+          styleObj,
+        ]
+      } catch (e) {
+        console.error(
+          'ERR: Constructable stylesheets are only supported in shadow roots',
+          e
+        )
+      }
   }
 }
