@@ -57,6 +57,8 @@ customElements.define('styled-elements', StyledElement)
 
 If you [use the Shadow DOM](/shadow-dom), you can add a `static styles` property of type string which will be added in the `shadowRoot`'s [`adoptedStylesheets`](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets).
 
+Try it now with this [example on CodePen ↗](https://codepen.io/ayoayco-the-styleful/pen/JojmeEe?editors=1010)
+
 ```js
 class StyledElement extends WebComponent {
   static shadowRootInit = {
