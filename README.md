@@ -13,8 +13,6 @@ When you extend the `WebComponent` class for your component, you only have to de
 
 The result is a reactive UI on property changes.
 
-There's a trade off between productivity & lightweight-ness here, and it is somewhere between [Microsoft's FASTElement](https://github.com/microsoft/fast) & [Google's LitElement](https://github.com/lit/lit/).
-
 ## Links
 
 - [Documentation](https://webcomponent.io)
