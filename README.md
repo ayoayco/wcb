@@ -35,3 +35,7 @@ There are many ways to get in touch:
 1. [htm](https://github.com/developit/htm) - I use it for the `html` function for tagged templates, and take a lot of inspiration in building the rendering implementation. It is highly likely that I will go for what Preact is doing... but we'll see.
 1. [fast](https://github.com/microsoft/fast) - When I found that Microsoft has their own base class I thought it was super cool!
 1. [lit](https://github.com/lit/lit) - `lit-html` continues to amaze me and I worked to make `wcb` generic so I (and others) can continue to use it
+
+---
+*Just keep building.*<br>
+*A project by [Ayo Ayco](https://ayo.ayco.io)*
