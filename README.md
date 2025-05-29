@@ -26,7 +26,7 @@ There are many ways to get in touch:
 1. Open a [GitHub issue](https://github.com/ayoayco/wcb/issues/new) or [discussion](https://github.com/ayoayco/wcb/discussions)
 1. Submit a ticket via [SourceHut todo](https://todo.sr.ht/~ayoayco/wcb)
 1. Email me: [ayo@ayco.io](mailto:ayo@ayco.io)
-1. Join Discord: [Ayo's Projects](https://discord.gg/kkvW7GYNAp)
+1. Chat on Discord: [Ayo's Projects](https://discord.gg/kkvW7GYNAp)
 
 ## Inspirations and thanks
 
