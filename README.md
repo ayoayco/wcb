@@ -36,4 +36,4 @@ There are many ways to get in touch:
 
 ---
 *Just keep building.*<br>
-*A project by [Ayo Ayco](https://ayo.ayco.io)*
+*A project by [Ayo](https://ayo.ayco.io)*
