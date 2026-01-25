@@ -4,7 +4,11 @@ import { WebComponent } from '../src/WebComponent.js'
 let componentUnderTest
 
 describe('WebComponent', () => {
-  // Browsers throw an error when you instantiate a custom element class not in the registry
+  /**
+   * We need to define the custom element because
+   * browsers throw an error when you instantiate
+   * a custom element class that is not in the registry
+   */
   window.customElements.define('component-test', WebComponent)
 
   beforeEach(() => {
