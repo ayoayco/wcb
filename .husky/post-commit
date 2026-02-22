@@ -1,0 +1,3 @@
+echo "post-commit..."
+git push gh --mirror
+git push sh --mirror
