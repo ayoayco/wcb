@@ -69,6 +69,12 @@ const htm =
     return f(), o.length > 2 ? o.slice(1) : o[1]
   })
 
+/**
+ *
+ * @param type
+ * @param props
+ * @param {...any} children
+ */
 function h(type, props, ...children) {
   return { type, props, children }
 }

@@ -1,3 +1,7 @@
+/**
+ *
+ * @param value
+ */
 export function serialize(value) {
   switch (typeof value) {
     case 'number':

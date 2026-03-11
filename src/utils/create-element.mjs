@@ -1,4 +1,8 @@
 import { serialize } from './serialize.mjs'
+/**
+ *
+ * @param tree
+ */
 export function createElement(tree) {
   if (!tree.type) {
     if (Array.isArray(tree)) {
@@ -39,6 +43,11 @@ export function createElement(tree) {
   }
 }
 
+/**
+ *
+ * @param el
+ * @param styleObj
+ */
 function applyStyles(el, styleObj) {
   Object.entries(styleObj).forEach(([rule, value]) => {
     if (rule in el.style && value) el.style[rule] = value

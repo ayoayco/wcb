@@ -1,3 +1,8 @@
+/**
+ *
+ * @param value
+ * @param type
+ */
 export function deserialize(value, type) {
   switch (type) {
     case 'number':
