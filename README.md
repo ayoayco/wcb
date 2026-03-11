@@ -26,7 +26,6 @@ There are many ways to get in touch:
 1. Open a [GitHub issue](https://github.com/ayoayco/wcb/issues/new) or [discussion](https://github.com/ayoayco/wcb/discussions)
 1. Submit a ticket via [SourceHut todo](https://todo.sr.ht/~ayoayco/wcb)
 1. Email me: [ayo@ayco.io](mailto:ayo@ayco.io)
-1. Chat on Discord: [Ayo's Projects](https://discord.gg/kkvW7GYNAp)
 
 ## Inspirations and thanks
 
@@ -35,5 +34,6 @@ There are many ways to get in touch:
 1. [lit](https://github.com/lit/lit) - `lit-html` continues to amaze me and I worked to make `wcb` generic so I (and others) can continue to use it
 
 ---
-*Just keep building.*<br>
-*A project by [Ayo](https://ayo.ayco.io)*
+
+_Just keep building._<br>
+_A project by [Ayo](https://ayo.ayco.io)_

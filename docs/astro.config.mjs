@@ -14,7 +14,6 @@ export default defineConfig({
         npm: 'https://www.npmjs.com/package/web-component-base',
         sourcehut: 'https://sr.ht/~ayoayco/wcb/',
         github: 'https://github.com/ayoayco/wcb/',
-        discord: 'https://discord.gg/kkvW7GYNAp',
       },
       sidebar: [
         {
